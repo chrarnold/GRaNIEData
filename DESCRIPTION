@@ -1,0 +1,28 @@
+Package: GRaNIEData
+Title: Additional and more complex example data for the GRaNIE package
+Version: 0.99.0
+Authors@R: c(person("Christian", "Arnold", email =
+        "chrarnold@web.de", role = c("cre","aut")),
+        person("Judith", "Zaugg", email =
+        "judith.zaugg@embl.de", role = c("aut"))
+       )
+Description: This companion package for GRaNIE provides an example dataset of a larger size. It includes a full and real-world example for performing analyses with GRaNIE. It can also be used independently of it, however.
+VignetteBuilder: knitr
+Suggests: BiocStyle,knitr,rmarkdown
+Depends: R (>= 4.1)
+VignetteBuilder: knitr
+biocViews: 
+    ExperimentData,
+    GeneExpression,
+    GeneRegulation,
+    NetworkInference,
+    GeneSetEnrichment,
+    BiomedicalInformatics,
+    Genetics,
+    Transcriptomics,
+    ATACSeq,
+    RNASeq,
+    Network,
+    Transcription,
+    ChIPSeq
+License: Artistic-2.0

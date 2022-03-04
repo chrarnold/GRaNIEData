@@ -1,0 +1,42 @@
+---
+title: "The *GRaNIEData* package"
+author: "Christian Arnold"
+date: "`r doc_date()`"
+package: "`r BiocStyle::pkg_ver('GRaNIEData')`"
+abstract: >
+  This is a companion package for *GRaNIE* and provides additional example datasets for it. The datasets in the *GRaNIEData* package are used in the *GRaNIE* vignette and provide a real-world dataset suitable for analyses.
+
+vignette: >
+  %\VignetteIndexEntry{The *GRaNIEData* package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+output: 
+  BiocStyle::html_document
+---
+
+# Description of the dataset and the aim of the analysis
+
+TODO change
+In a recent study we have identified thousands of quantitative trait loci (QTLs) for different histone marks using individuals from the Yoruban (YRI) population [2]. In our case, histone (h)QTLs are SNPs for which the genotype correlate with the variation of histone H3K27ac signal within a H3K27ac peak. Here we will investigate how many of these previously identified hQTLs show allele-specific binding in individuals from a different population (CEU; European). 
+
+
+The example dataset consists of the following files:
+
+* 14,000 previously identified H3K27ac QTLs for individuals from the YRI population [1,2]
+* H3K27ac ChIP-Seq data for two individuals (GM10847, GM12890) obtained from Kasowski et al [2] from the CEU population (two replicates each). The reads have previously been mapped to the personalized phased genomes of these individuals [2]	
+* Corresponding genotypes for the SNPs were obtained from the *1000 Genomes Project* [3]
+
+
+
+# Example Workflow
+
+For an example workflow, see the workflow vignette of the `GRaNIE` package.
+
+
+# References
+
+
+# Session Info
+
+```{r}
+ sessionInfo()
