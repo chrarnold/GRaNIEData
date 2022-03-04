@@ -13,16 +13,8 @@ Depends: R (>= 4.1)
 VignetteBuilder: knitr
 biocViews: 
     ExperimentData,
-    GeneExpression,
-    GeneRegulation,
-    NetworkInference,
-    GeneSetEnrichment,
-    BiomedicalInformatics,
-    Genetics,
-    Transcriptomics,
-    ATACSeq,
-    RNASeq,
-    Network,
-    Transcription,
-    ChIPSeq
+    ExpressionData,
+    Homo_sapiens_Data,
+    SequencingData,
+    RNASeqData
 License: Artistic-2.0

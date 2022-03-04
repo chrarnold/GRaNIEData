@@ -16,16 +16,18 @@ output:
 
 # Description of the dataset and the aim of the analysis
 
-TODO change
-In a recent study we have identified thousands of quantitative trait loci (QTLs) for different histone marks using individuals from the Yoruban (YRI) population [2]. In our case, histone (h)QTLs are SNPs for which the genotype correlate with the variation of histone H3K27ac signal within a H3K27ac peak. Here we will investigate how many of these previously identified hQTLs show allele-specific binding in individuals from a different population (CEU; European). 
+The data is taken from [here](https://zenodo.org/record/1188300#.X370PXUzaSN) [1], has been processed to meet the requirements of the `GRaNIE` package and consists of the following files:
+
+* ATAC-seq peaks (around 75.000, genome-wide)
+* RNA-Seq data for around 35.000 genes (raw counts)
+* sample metadata with additional sample-specific information
+
+In general, the dataset is from human macrophages (both naive and IFNg primed) of healthy individuals and various stimulations / infections (naive vs primed and infected with SL1344 vs not), with 4 groups in total: control/infected(SL1344) and naive/primed(IFNg)
 
 
-The example dataset consists of the following files:
+Furthermore, the example dataset is accompanied by the following files:
 
-* 14,000 previously identified H3K27ac QTLs for individuals from the YRI population [1,2]
-* H3K27ac ChIP-Seq data for two individuals (GM10847, GM12890) obtained from Kasowski et al [2] from the CEU population (two replicates each). The reads have previously been mapped to the personalized phased genomes of these individuals [2]	
-* Corresponding genotypes for the SNPs were obtained from the *1000 Genomes Project* [3]
-
+* genome-wide transcription factor binding site predictions for 75 selected TFs, along with a translation table to link TF names to their corresponding Ensembl IDs. For each TF, a gzipped BED file has been created with predicted TF binding sites. The files have been generated with `PWMScan` and the `HOCOMOCO` database, see [2] for details.
 
 
 # Example Workflow
@@ -34,7 +36,8 @@ For an example workflow, see the workflow vignette of the `GRaNIE` package.
 
 
 # References
-
+[1] https://zenodo.org/record/1188300#.X370PXUzaSN
+[2] Ivan Berest*, Christian Arnold*, Armando Reyes-Palomares, Giovanni Palla, Kasper Dindler Rasmussen, Holly Giles, Peter-Martin Bruch, Wolfgang Huber, Sascha Dietrich, Kristian Helin, Judith B. Zaugg. Quantification of Differential Transcription Factor Activity and Multiomics-Based Classification into Activators and Repressors: diffTF. 2019. Cell Reports 29(10), P3147-3159.E12.
 
 # Session Info
 
